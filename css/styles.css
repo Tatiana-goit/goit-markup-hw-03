@@ -84,6 +84,7 @@ img {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .header .contener {
@@ -184,7 +185,7 @@ img {
   height: 50px;
   margin: 0 auto;
   border-radius: 4px;
-  border: 1px solid var(--accent-color);
+  border: none;
   cursor: pointer;
   padding: 10px 32px;
 
@@ -267,6 +268,9 @@ img {
 /*===============END ACTIVITIES============*/
 
 /*===============OUR TEAM============*/
+.team {
+  background-color: #f5f4fa;
+}
 .team .contener {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -281,8 +285,6 @@ img {
 }
 
 .team {
-  margin-bottom: 50px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.667;
@@ -294,6 +296,7 @@ img {
 .team-list-about {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #ffffff;
 }
 
 .team-list-name {
@@ -318,10 +321,12 @@ img {
 /*===============END OUR TEAM============*/
 
 /*===============FOOTER============*/
+.footer {
+  background-color: var(--title-text-color);
+}
 .footer .contener {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--title-text-color);
 }
 
 .footer .logo {
@@ -397,7 +402,23 @@ img {
   flex-wrap: wrap;
 }
 
+.example-list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.example-list-item:not(:nth-child(-n + 3)) {
+  margin-block: 30px;
+}
+
+.example-list-information {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
 .example-list-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
