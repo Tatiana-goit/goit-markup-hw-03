@@ -12,12 +12,28 @@
   --main-font: "Roboto", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 body {
   font-family: var(--main-font);
 }
 
-ul {
+ul,
+ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -27,6 +43,16 @@ a {
 .address,
 .contact {
   font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+.contener {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -44,21 +70,47 @@ a {
 }
 
 /*===============COMPONENTS============*/
-
-/*===============END COMPONENTS============*/
-
-/*===============HEADER============*/
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
+}
+
+/*===============END COMPONENTS============*/
+
+/*===============HEADER============*/
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header .contener {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+}
+
+.header .logo {
+  margin-right: 93px;
   color: #000000;
 }
 
 .logo-first {
   color: var(--accent-color);
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation-list-link {
@@ -78,7 +130,18 @@ a {
   color: var(--accent-color);
 }
 
-.address-list-item {
+.address {
+  margin-left: auto;
+}
+.address-list {
+  display: flex;
+}
+
+.address-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.address-list-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -86,14 +149,27 @@ a {
   color: var(--text-color);
 }
 
-.address-list-item:hover,
-.address-list-item:focus {
+.address-list-link:hover,
+.address-list-link:focus {
   color: var(--accent-color);
 }
 /*===============END HEADER============*/
 
 /*===============HERO============*/
+.hero {
+  background-color: var(--title-text-color);
+}
+
+.hero .contener {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero-title {
+  display: flex;
+  max-width: 696px;
+  margin: 0 auto 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -101,10 +177,17 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  background-color: var(--title-text-color);
 }
 
 .hero-button {
+  min-width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -119,7 +202,26 @@ a {
 /*===============END HERO============*/
 
 /*===============ADVANTAGES============*/
+.advanteges .contener {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.advantages-list {
+  display: flex;
+}
+
+.advantages-list-item {
+  width: calc((100%-3 * 30px) / 4);
+}
+
+.advantages-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-list-item-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -129,6 +231,8 @@ a {
 }
 
 .advantages-list-item-text {
+  min-height: 75px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
@@ -138,7 +242,21 @@ a {
 /*===============END ADVANTAGES============*/
 
 /*===============ACTIVITIES============*/
+.activities .contener {
+  padding-bottom: 94px;
+}
+
+.activities-list {
+  display: flex;
+}
+
+.activities-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .activities-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.667;
@@ -148,8 +266,23 @@ a {
 }
 /*===============END ACTIVITIES============*/
 
-/*===============ACTIVITIES============*/
+/*===============OUR TEAM============*/
+.team .contener {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.667;
@@ -157,7 +290,15 @@ a {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
+.team-list-about {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-list-name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.876;
@@ -174,16 +315,31 @@ a {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-/*===============END ACTIVITIES============*/
+/*===============END OUR TEAM============*/
 
 /*===============FOOTER============*/
+.footer .contener {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--title-text-color);
+}
+
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--white-color);
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .contact-list-city {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--white-color);
-  background-color: var(--title-text-color);
 }
 
 .contact-list-link {
@@ -196,9 +352,32 @@ a {
 }
 /*===============END FOOTER============*/
 
-/*===============WORKS(2)============*/
-.works-button-list-item {
+/*===============PORTFOLIO============*/
+.works .contener {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.works-button {
+  margin-bottom: 34px;
+  height: 54px;
+}
+
+.works-button-list {
+  display: flex;
+  justify-content: center;
+}
+
+.works-button-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.works-button-list-btn {
+  border: none;
+  padding: 6px 22px;
   font-weight: 500;
+  border-radius: 4px;
+
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
@@ -207,10 +386,15 @@ a {
   font-family: var(--main-font);
 }
 
-.works-button-list-item:hover,
-.works-button-list-item:focus {
+.works-button-list-btn:hover,
+.works-button-list-btn:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+}
+
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .example-list-title {
@@ -228,4 +412,4 @@ a {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
-/*===============END WORKS(2)============*/
+/*===============END PORTFOLIO============*/
