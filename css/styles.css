@@ -1,0 +1,231 @@
+/*===============ROOT============
+цвет заголовков текста  #212121;
+цвет текста #757575;
+цвет акцента #2196F3;
+белый цвет # FFFFFF
+*/
+:root {
+  --title-text-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --main-font: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.address,
+.contact {
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*===============COMPONENTS============*/
+
+/*===============END COMPONENTS============*/
+
+/*===============HEADER============*/
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo-first {
+  color: var(--accent-color);
+}
+
+.navigation-list-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+  color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.address-list-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.address-list-item:hover,
+.address-list-item:focus {
+  color: var(--accent-color);
+}
+/*===============END HEADER============*/
+
+/*===============HERO============*/
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--title-text-color);
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-family: var(--main-font);
+}
+/*===============END HERO============*/
+
+/*===============ADVANTAGES============*/
+.advantages-list-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+
+.advantages-list-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/*===============END ADVANTAGES============*/
+
+/*===============ACTIVITIES============*/
+.activities-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+/*===============END ACTIVITIES============*/
+
+/*===============ACTIVITIES============*/
+.team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team-list-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.876;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.team-list-profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/*===============END ACTIVITIES============*/
+
+/*===============FOOTER============*/
+.contact-list-city {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  background-color: var(--title-text-color);
+}
+
+.contact-list-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--title-text-color);
+}
+/*===============END FOOTER============*/
+
+/*===============WORKS(2)============*/
+.works-button-list-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  font-family: var(--main-font);
+}
+
+.works-button-list-item:hover,
+.works-button-list-item:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.example-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.example-list-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/*===============END WORKS(2)============*/
