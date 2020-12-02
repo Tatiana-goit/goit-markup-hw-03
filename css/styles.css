@@ -286,6 +286,8 @@ img {
 }
 
 .team {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.667;
@@ -364,14 +366,10 @@ img {
   padding-bottom: 94px;
 }
 
-.works-button {
-  margin-bottom: 34px;
-  height: 54px;
-}
-
 .works-button-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .works-button-list-item:not(:last-child) {
